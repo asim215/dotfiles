@@ -1,0 +1,187 @@
+#fg0 #282828
+#main highlight yellow #d79921
+
+[tab]
+active    = { fg = "#282828", bg = "#d79921" }
+# active    = { fg = "#1E2031", bg = "#d79921" }
+# active    = { fg = "#1E2031", bg = "#80AEFA" }
+
+# inactive  = { fg = "#C8D3F8", bg = "#484D66" }
+
+# bg2
+# inactive  = { fg = "#282828", bg = "#d5c4a1" }
+# bg1
+inactive  = { fg = "#282828", bg = "#ebdbb2" }
+max_width = 10
+
+[status]
+# yellow purple purple
+primary	  = { normal = "#d79921", select = "#d65d0e", unset = "#8f3f71" }
+# primary	  = { normal = "#80AEFA", select = "#CD9EFC", unset = "#FFA577" }
+secondary = { normal = "#1E2031", select = "#23273B", unset = "#23273B" }
+tertiary  = { normal = "#6D738F", select = "#6D738F", unset = "#6D738F" }
+# body      = { normal = "#484D66", select = "#484D66", unset = "#484D66" }
+# bg1
+body      = { normal = "#ebdbb2", select = "#484D66", unset = "#484D66" }
+# bg2
+# body      = { normal = "#d5c4a1", select = "#484D66", unset = "#484D66" }
+emphasis  = { normal = "#C8D3F8", select = "#C8D3F8", unset = "#C8D3F8" }
+info      = { normal = "#7AD9E5", select = "#7AD9E5", unset = "#7AD9E5" }
+success   = { normal = "#97DC8D", select = "#97DC8D", unset = "#97DC8D" }
+warning   = { normal = "#F3D398", select = "#F3D398", unset = "#F3D398" }
+danger    = { normal = "#FA7F94", select = "#FA7F94", unset = "#FA7F94" }
+separator = { opening = "", closing = "" }
+
+[progress]
+gauge = { fg = "#FFA577", bg = "#ebdbb2" }
+label = { fg = "#FFFFFF", bold = true }
+
+[selection]
+# hovered = { fg = "#1E2031", bg = "#80AEFA" }
+hovered = { fg = "#1E2031", bg = "#d79921" }
+
+[marker]
+selecting = { fg = "#97DC8D", bg = "#97DC8D" }
+# selecting = { fg = "#97DC8D", bg = "#79740e" }
+# selected  = { fg = "#F3D398", bg = "#F3D398" }
+# selected  = { fg = "#F3D398", bg = "#98971a" }
+# aqua
+selected  = { fg = "#F3D398", bg = "#689d6a" }
+
+[preview]
+# aqua from dark theme
+# hovered       = { bg = "#8ec07c", underline = true }
+# bg1
+hovered       = { bg = "#ebdbb2", bold = true }
+# syntect_theme = "~/.config/bat/themes/Catppuccin-macchiato.tmTheme"
+syntect_theme = "~/.config/yazi/gruvbox_light_medium.tmTheme"
+
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "#7AD9E5" },
+
+	# Videos
+	# blue 076678
+	# { mime = "video/*", fg = "#F3D398" },
+	# { mime = "audio/*", fg = "#F3D398" },
+	{ mime = "video/*", fg = "#076678" },
+	{ mime = "audio/*", fg = "#076678" },
+
+	# Archives
+	# red cc241d
+	{ mime = "application/x-bzip", fg = "#cc241d" },
+	{ mime = "application/x-bzip2", fg = "#cc241d" },
+	{ mime = "application/gzip", fg = "#cc241d" },
+	{ mime = "application/vnd.rar", fg = "#cc241d" },
+	{ mime = "application/x-tar", fg = "#cc241d" },
+	{ mime = "application/zip", fg = "#cc241d" },
+	{ mime = "application/x-7z-compressed", fg = "#cc241d" },
+
+	# Scripts
+	# yellow d79921
+	{ mime = "text/x-shellscript", fg = "#d79921" },
+
+  # Fallback
+	## All files
+	{ name = "*", fg = "#282828" },
+	## All directories
+	# { name = "*/", fg = "#af3a03", bold = true }
+	{ name = "*/", fg = "#282828", bold = true }
+]
+
+[icons]
+
+"Desktop/"     = ""
+"Documents/"   = ""
+"Downloads/"   = ""
+"Pictures/"    = ""
+"Music/"       = ""
+"Movies/"      = ""
+"Videos/"      = ""
+"Public/"      = ""
+"Library/"     = ""
+"Development/" = ""
+".config/"     = ""
+
+# Git
+".git/"          = ""
+".gitignore"     = ""
+".gitmodules"    = ""
+".gitattributes" = ""
+
+# Dotfiles
+".DS_Store"    = ""
+".bashrc"      = ""
+".bashprofile" = ""
+".zshrc"       = ""
+".zshenv"      = ""
+".zprofile"    = ""
+".vimrc"       = ""
+
+# Text
+"*.txt" = ""
+"*.md"  = ""
+
+# Archives
+"*.zip" = ""
+"*.tar" = ""
+"*.gz"  = ""
+"*.7z"  = ""
+
+# Audio
+"*.mp3"  = ""
+"*.flac" = ""
+"*.wav"  = ""
+
+# Movies
+"*.mp4" = ""
+"*.mkv" = ""
+"*.avi" = ""
+"*.mov" = ""
+
+# Images
+"*.jpg"  = ""
+"*.jpeg" = ""
+"*.png"  = ""
+"*.gif"  = ""
+"*.webp" = ""
+"*.avif" = ""
+"*.bmp"  = ""
+"*.ico"  = ""
+"*.svg"  = ""
+
+# Programming
+"*.c"     = ""
+"*.cpp"   = ""
+"*.h"     = ""
+"*.hpp"   = ""
+"*.rs"    = ""
+"*.go"    = ""
+"*.py"    = ""
+"*.js"    = ""
+"*.ts"    = ""
+"*.tsx"   = ""
+"*.jsx"   = ""
+"*.rb"    = ""
+"*.php"   = ""
+"*.java"  = ""
+"*.sh"    = ""
+"*.fish"  = ""
+"*.swift" = ""
+"*.vim"   = ""
+"*.lua"   = ""
+"*.html"  = ""
+"*.css"   = ""
+"*.scss"  = ""
+"*.json"  = ""
+"*.toml"  = ""
+"*.yml"   = ""
+"*.yaml"  = ""
+"*.ini"   = ""
+"*.conf"  = ""
+
+# Default
+"*"  = ""
+"*/" = ""
